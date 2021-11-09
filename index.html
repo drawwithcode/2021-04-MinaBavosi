@@ -1,18 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background: transparent;
+      }
+
+      h1 {
+        position: absolute;
+        font-family: "Helvetica";
+        font-style: normal;
+        font-size: 60px;
+        color: rgb(255, 0, 183);
+        left: 50px;
+        top: 5px;
+      }
+
+      h2 {
+        position: absolute;
+        top: 80px;
+        left: 55px;
+        color: transparent;
+        stroke: rgb(255, 0, 183);
+        -webkit-text-stroke-width: 0.75px;
+        -webkit-text-stroke-color: rgb(255, 0, 183);
+        font-size: 40px;
+        font-family: "Noto Serif";
+        font-style: italic;
+      }
+
+      button {
+        position: absolute;
+        font-family: "Helvetica";
+        font-size: 15px;
+        border: 1.5px solid rgb(255, 0, 183);
+        color: white;
+        background-color: transparent;
+        padding: 0px;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        left: 1000px;
+        top: 300px;
+      }
+
+      button:hover {
+        background-color: rgb(255, 0, 183);
+        color: rgb(255, 255, 255);
+      }
+
+      p {
+        font-family: "Helvetica";
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 100px;
+        top: 300px;
+      }
+      input {
+        position: absolute;
+        width: 120px;
+        height: 40px;
+        padding: 6px 24px;
+        border: 1.5px solid rgb(255, 0, 183);
+        color: white;
+        background-color: transparent;
+        font-family: "Helvetica";
+        font-size: 15px;
+        outline: none;
+        left: 100px;
+        top: 300px;
+      }
+
+      input[type="text"]:focus {
+        background-color: rgb(255, 0, 225);
+      }
+    </style>
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sketch</title>
+    <title>DRAG</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
   </head>
 
   <body>
-    <script src="sketch.js"></script>
+    <h1 class="title">YOUR GLITTERED INNER SELF</h1>
+    <h2 class="subtitle">discover your drag name</h2>
+
+    <video autoplay muted loop>
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <audio autoplay loop><source src="ru.mp3" /></audio>
   </body>
 </html>
